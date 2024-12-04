@@ -1,0 +1,204 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #808080; /* Light gray background */
+    color: #333; /* Text color for better contrast */
+}
+
+header {
+    background: url('/images/header.jpg') no-repeat center center/cover;
+    color: #9ACD32;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+    transform: scale(1.1);
+}
+
+header h1 {
+    z-index: 1;
+    font-size: 40px; /* Increased font size */
+    margin: 0;
+    font-weight: bold; /* Makes it bold */
+    letter-spacing: 2px; /* Adds spacing between letters */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 1.0), /* Primary shadow */
+        -1px -1px 0px rgba(0, 0, 0, 1.0), /* Top-left shadow for outline effect */
+        1px -1px 0px rgba(0, 0, 0, 1.0), /* Top-right shadow for outline effect */
+        -1px 1px 0px rgba(0, 0, 0, 1.0), /* Bottom-left shadow for outline effect */
+        1px 1px 0px rgba(0, 0, 0, 1.0); /* Bottom-right shadow for outline effect */
+    -webkit-text-stroke: 1px black; /* Adds an outline (for WebKit browsers) */
+    color: #9ACD32; /* Maintains the lime green color */
+}
+
+
+header nav {
+    z-index: 1;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Adjusts spacing between nav items */
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 1.0), /* Primary shadow */
+    -1px -1px 0px rgba(0, 0, 0, 1.0), /* Top-left shadow for outline effect */
+    1px -1px 0px rgba(0, 0, 0, 1.0), /* Top-right shadow for outline effect */
+    -1px 1px 0px rgba(0, 0, 0, 1.0), /* Bottom-left shadow for outline effect */
+    1px 1px 0px rgba(0, 0, 0, 1.0); /* Bottom-right shadow for outline effect */
+-webkit-text-stroke: 1px black; /* Adds an outline (for WebKit browsers) */
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 30px; /* Increased font size */
+    font-weight: bold; /* Makes it bold */
+    transition: background-color 0.3s ease; /* Adds a smooth hover effect */
+}
+
+header nav a:hover {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+}
+
+.header-content h1 {
+    flex-grow: 1; /* Ensures the title takes up available space */
+    text-align: center; /* Centers the title between logos */
+    font-size: 40px; /* Adjust title font size */
+    font-weight: bold; /* Make title bold */
+    margin: 0; /* Removes default margin */
+}
+
+.header-logo {
+    width: 150px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures it behaves like a block element */
+}
+
+
+main {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.bpe-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.bpe-content img {
+    max-width: 50%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center; 
+    font-size: 35px; /* Increased size of section titles */
+    margin-top: 30px;
+    text-transform: uppercase; /* Makes titles uppercase */
+    color: black; /* Adjusts color */
+}
+
+section p {
+    font-size: 30px; /* Increased font size for better readability */
+    line-height: 1.8; /* Adjust line height for better spacing */
+    color: whitesmoke; /* Slightly darker color for better contrast */
+    text-align: justify; /* Justifies the paragraph for a clean look */
+    margin-bottom: 20px; /* Adds spacing below the paragraph */
+}
+
+section img {
+    max-width: 50%; /* Limits image width to 80% of its container */
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Ensures proper alignment as a block element */
+    border-radius: 10px; /* Optional: Adds rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow effect */
+}
+
+footer {
+    text-align: center; /* Centers the text */
+    font-size: 25px; /* Adjust the font size to your preference */
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Adjusts the text color for better visibility */
+    padding: 10px 0; /* Adds padding for spacing */
+    background-color: #f2f2f2; /* Optional: Adds a background color to the footer */
+    border-top: 2px solid #ccc; /* Optional: Adds a top border for separation */
+}
+
+
+/* Additional styles for Curriculum and Organizational Chart sections */
+
+/* Style for paragraphs under Curriculum and Organizational Chart */
+section p {
+    font-size: 30px; /* Adjust font size for better readability */
+    line-height: 1.6; /* Adjust line height for better spacing */
+    color: #f1f1f1; /* Lighter color for text */
+    text-align: justify; /* Justifies the paragraph for a clean look */
+    margin-bottom: 15px; /* Adjusts spacing between paragraphs */
+}
+
+/* Adjust the heading for Curriculum and Organizational Chart */
+h2 {
+    font-size: 40px; /* Size of section titles */
+    margin-top: 30px;
+    text-transform: uppercase; /* Makes titles uppercase */
+    color: #222; /* Darker color for section titles */
+    font-weight: bold; /* Make section titles bold */
+    text-align: center; /* Centers the titles */
+}
+
+/* Optional: Style for the 'Curriculum' and 'Organizational Chart' descriptions */
+section p strong {
+    font-size: 28px; /* Increase size of subheadings */
+    color: #FFD700; /* Gold color for emphasis */
+    font-weight: bold; /* Makes the subheading bold */
+}
+
+/* Optional: Style the list items in the Curriculum and Organizational Chart sections */
+section ul {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 40px; /* Adds left padding for list */
+    margin-bottom: 20px; /* Adds spacing after the list */
+}
+
+section ul li {
+    font-size: 30px; /* Font size for list items */
+    line-height: 1.8; /* Adjust line height for better readability */
+    color: #f1f1f1; /* Light text color for list items */
+}
